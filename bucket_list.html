@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <title>Personal Bucket List</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 20px 0;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bucket-list {
+            list-style: none;
+            padding: 0;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .bucket-list li {
+            background: white;
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .bucket-list .icon {
+            margin-right: 10px;
+            color: #2575fc;
+        }
+
+        footer {
+            text-align: center;
+            background: #2575fc;
+            color: white;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            .bucket-list li {
+                font-size: 0.9em;
+            }
+        }
+
+        .bucket-list li:hover {
+            transform: scale(1.02);
+            background-color: #f0f8ff;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Personal Bucket List</h1>
+    </header>
+    <main>
+        <ul class="bucket-list">
+    		<li><span class="icon"><i class="fas fa-check"></i></span> Travel to Japan</li>
+    		<li><span class="icon"><i class="fas fa-star"></i></span> Learn to play the piano</li>
+    		<li><span class="icon"><i class="fas fa-check"></i></span> Go skydiving</li>
+    		<li><span class="icon"><i class="fas fa-star"></i></span> Write a book</li>
+	</ul>
+
+    </main>
+    <footer>
+        <p>My 2025 Bucket List</p>
+    </footer>
+</body>
+</html>
